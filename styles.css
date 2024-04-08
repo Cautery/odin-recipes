@@ -1,0 +1,149 @@
+:root{
+    --bgcolor: #fdf6e3;
+    --bgaccent: #eee8d5;
+    --textcolor: #586e75;
+    --h1color: #50302A;
+    --accent: #985534;
+    --border: #1F1300;
+}
+
+body{
+    font-family:'Open Sans', sans-serif;
+    color: var(--textcolor);
+    background-color: var(--bgcolor);
+    margin-left: 2em;
+    max-width: 650px;
+}
+
+h1 {
+    margin: 0.5em 0em 0.15em 0em;
+    font-size: 52px;
+    color: var(--h1color);
+}
+
+h2{    
+    font-size: 28px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h1, h2{
+    font-family: Merriweather, serif;
+}
+
+h2, h3{
+    margin: 0em 0em .5em 0em;
+    color: var(--accent);
+}
+
+hr{
+    border: 1px solid var(--bgaccent);
+    margin:2em 0em;
+    max-width: 648px;
+}
+
+a{
+    color: var(--accent);
+}
+
+.author{
+    font-size: 110%;
+    color: var(--accent);
+}
+
+ul {
+    margin: 0;
+}
+
+ol{
+    margin: 0;
+}
+
+li::marker{
+    font-weight:bold;
+    color: var(--accent);
+}
+
+body.index{
+    margin: 2.5em;
+}
+
+.index h1{
+    font-size: 60px;
+    margin-bottom: 0.5em;
+}
+
+.index ul{
+    list-style-type: none;
+}
+
+.index li{
+    margin: 1em;
+    font-size: 24px;
+}
+
+.recipe p{
+    margin: 0;
+    text-indent: 2em;
+    max-width: 650px;
+    text-align: justify;
+    text-align-last: left;
+}
+
+.recipe li{
+    max-width: 650px;
+    text-align: justify;
+    text-align-last: left;
+    margin-bottom: 2.5em
+}
+
+.recipe .ingredients li{
+    margin-bottom: 0.25em;
+}
+
+.recipe img{
+    border: 2px solid var(--border);
+    margin: 0.75em 0em;
+    width: 640px;
+    height: auto;    
+}
+
+.recipe li img{
+    max-width: 600px;
+    margin-bottom: 0em;
+}
+
+footer div{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 33%;
+    max-width: 650px;
+    margin-bottom: 2em;
+    padding:0;
+    color: var(--accent);
+    font-size: 20px;
+}
+
+footer p{
+    margin: 0;
+    max-width: 650px;
+    text-indent: 0;
+    text-align: center;
+    text-align-last: center;
+}
+
+
+footer a{
+    color: var(--accent);
+    font-size: 20px;
+}
+
+footer.index{
+    position: fixed;
+    bottom: 0;
+    width: 650px;
+}
